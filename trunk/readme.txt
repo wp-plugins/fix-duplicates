@@ -15,6 +15,7 @@ The purpose of this plugin is to delete duplicates. Extensive testing has been c
 
 = Extensions =
 We currently offer the following premium extensions:
+
 * [Redirection](http://scratch99.com/products/fix-duplicates/redirection/): Gives you the ability to 301 redirect any duplicates being deleted, to the one being kept. This helps preserve your link equity, so that PageRank is passed to a single post rather than just being lost. Or to put it simply: Helps with SEO!
 
 = Compatibility =
