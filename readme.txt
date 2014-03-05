@@ -8,10 +8,14 @@ Stable tag: 1.0
 Find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
 
 == Description ==
-Find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
+Use the [Fix Duplicates plugin](http://scratch99.com/products/fix-duplicates/) to find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
 
 = Warning =
 The purpose of this plugin is to delete duplicates. Extensive testing has been carried out, but you should make sure you have a backup of your database, just in case.
+
+= Extensions =
+We currently offer the following premium extensions:
+* [Redirection](http://scratch99.com/products/fix-duplicates/redirection/): Gives you the ability to 301 redirect any duplicates being deleted, to the one being kept. This helps preserve your link equity, so that PageRank is passed to a single post rather than just being lost. Or to put it simply: Helps with SEO!
 
 = Compatibility =
 * This plugin requires WordPress 2.8 or above.
