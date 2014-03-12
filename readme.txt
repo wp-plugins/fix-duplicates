@@ -1,14 +1,16 @@
 === Plugin Name ===
 Contributors: StephenCronin
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sjc@scratch99.com&currency_code=&amount=&return=&item_name=WP-FixDuplicates
-Tags: duplicates, find duplicates, fix duplicate, user submitted posts
+Tags: duplicates, find duplicates, fix duplicates, duplicate posts, user submitted posts, classifieds
 Requires at least: 2.8.0
 Tested up to: 3.8.1
 Stable tag: 1.0
 Find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
 
 == Description ==
-Use the [Fix Duplicates plugin](http://scratch99.com/products/fix-duplicates/) to find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
+Do you run a site with user submitted content? Do users submit the same post again and again? Use the [Fix Duplicates plugin](http://scratch99.com/products/fix-duplicates/) to find and delete duplicate posts. 
+
+There is also a paid [Redirection extension](http://scratch99.com/products/fix-duplicates/redirection/) that preserves the link equity of removed duplicates by 301 redirecting them to the kept item.
 
 = Warning =
 The purpose of this plugin is to delete duplicates. Extensive testing has been carried out, but you should make sure you have a backup of your database, just in case.
