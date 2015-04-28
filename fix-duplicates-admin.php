@@ -455,7 +455,7 @@ function fix_duplicates_admin_main() {
 									</strong>
 									
 									<div class="row-actions">
-										<span class="trash"><a id="trash-<?php echo absint( $value[ 'ID' ] ); ?>" class="submitdelete" title="Move this item to the Trash" href="<?php echo wp_nonce_url( add_query_arg( array( 'action' => 'duplicate_trash_individual', 'post' => absint( $value[ 'ID' ] ), 'redirect' => false, '_wpnonce' => false ) ), 'fix_duplicates_main_form_nonce' ); ?>">Trash</a></span> |
+										<span class="trash"><a id="trash-<?php echo absint( $value[ 'ID' ] ); ?>" class="submitdelete" title="Move this item to the Trash" href="<?php echo esc_url( wp_nonce_url( add_query_arg( array( 'action' => 'duplicate_trash_individual', 'post' => absint( $value[ 'ID' ] ), 'redirect' => false, '_wpnonce' => false ) ), 'fix_duplicates_main_form_nonce' ) ); ?>">Trash</a></span> |
 										
 							<?php
 								// build the string to put out for individual redirect links
