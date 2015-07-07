@@ -5,9 +5,8 @@
 
 // ********** Add the menu entry **********
 function fix_duplicates_menu() {
-	add_menu_page( 'Fix Duplicates', 'Fix Duplicates', 'update_plugins', 'fix_duplicates', 'fix_duplicates_admin_main', plugins_url( '/images/fix-duplicates-icon-16.png', __FILE__ ) );
-	add_submenu_page( 'fix_duplicates', 'Duplicate Entries', 'Duplicate Entries', 'update_plugins', 'fix_duplicates', 'fix_duplicates_admin_main' );
-//	add_submenu_page( 'fix_duplicates', 'Support', 'Support', 'update_plugins', 'fix_duplicates_support', 'fix_duplicates_admin_support' );
+	add_menu_page( 'Fix Duplicates', 'Fix Duplicates', 'delete_pages', 'fix_duplicates', 'fix_duplicates_admin_main', plugins_url( '/images/fix-duplicates-icon-16.png', __FILE__ ) );
+	add_submenu_page( 'fix_duplicates', 'Duplicate Entries', 'Duplicate Entries', 'delete_pages', 'fix_duplicates', 'fix_duplicates_admin_main' );
 }
 add_action( 'admin_menu', 'fix_duplicates_menu', 8 );	// priority 9 to fire before CPT added to menu
 // **************************************
