@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=sjc@scra
 Tags: duplicates, find duplicates, fix duplicates, duplicate posts, user submitted posts, classifieds
 Requires at least: 2.8.0
 Tested up to: 4.2.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Find and delete duplicates posts. There are extensions that allow you find posts with similar content, redirect duplicates to the post you are keeping, etc.
 
 == Description ==
@@ -46,6 +46,9 @@ Alternatively, you can install the plugin automatically through the WordPress Ad
 5. The redirection management screen, which is part of the premium Redirection extension.
 
 == Changelog ==
+
+= 1.0.3 (12 July 2015) =
+* Minor Fix: Prevent PHP warnings from occuring (by checking for the existence of GET variables before use).
 
 = 1.0.2 (7 July 2015) =
 * Change: Allow users with the `delete_pages` capability to delete duplicates (instead of admins only).

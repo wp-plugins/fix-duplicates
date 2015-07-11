@@ -31,15 +31,15 @@ add_filter( 'plugin_action_links', 'fix_duplicates_settings_link', 10, 2 );
 // ********** load the necessary scripts and stylesheets **********
 function fix_duplicates_enqueue( $hook ) {
 	// if it's not one of our pages, let's bail
-	if ( ! stristr ( $hook, 'fix_duplicates' ) && ! esc_html( $_GET[ 'post_type' ] == 'fix_dups_redirects' ) )
+	if ( ( ! isset( $_GET[ 'post_type' ] ) || ! $_GET[ 'post_type' ] == 'fix_dups_redirects' ) && ! stristr ( $hook, 'fix_duplicates' ) )
 		return;
-		
+
 	// register and enqueue our stylesheets and scripts as necessary
 	$fix_duplicates_options = get_option( 'fix_duplicates_options' );
 	wp_register_style( 'fix_duplicates_admin_css', plugins_url( '/includes/fix-duplicates.css', __FILE__ ), false, $fix_duplicates_options[ 'version' ] );
 	wp_enqueue_style( 'fix_duplicates_admin_css' );
 	wp_enqueue_script( 'fix_duplicates_admin_js', plugins_url( '/includes/fix-duplicates.js', __FILE__ ), array( 'jquery' ), $fix_duplicates_options[ 'version' ] );
-	
+
 }
 add_action( 'admin_enqueue_scripts', 'fix_duplicates_enqueue' );
 // *********************************************************
@@ -49,7 +49,7 @@ add_action( 'admin_enqueue_scripts', 'fix_duplicates_enqueue' );
 function fix_duplicates_admin_head() {
 	// can't easily move to the external CSS file because of the PHP included to get the correct URL
 	// if not one of our pages, don't include the scripts
-	if ( ! stristr ( $_GET[ 'page' ] , 'fix_duplicates' ) )
+	if ( ! isset( $_GET[ 'page' ] ) || ! stristr ( $_GET[ 'page' ] , 'fix_duplicates' ) )
 		return;
 ?>
 	<!-- Start Fix Duplicates plugin additions -->
